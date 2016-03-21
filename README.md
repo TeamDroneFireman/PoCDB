@@ -7,8 +7,9 @@ Ce dépôt contient le PoC Database pour le projet FiremanDrone
 Ce PoC contient un docker file pour créer un container mongodb.
 - Infos de la VM
 Port : 27017
-User : admin
-Base : mongo-db1
+User : "admin"
+Password : ""
+Base : "mongo-db1"
 
 ###1.2 Get started 
  
@@ -16,11 +17,11 @@ Base : mongo-db1
  ```
  docker pull mongo
  ```
- ###Start the app on port 27017
+ Start the app on port 27017
  ```
  docker run --name mongo-db1 -d mongo
  ```
- ###Access mongo shell
+ Access mongo shell
  ```
  docker exec -it mongo-db1 mongo admin
  ```

@@ -16,11 +16,11 @@ Base : mongo-db1
  ```
  docker pull mongo
  ```
- ### Start the app on port 27017
+ ###Start the app on port 27017
  ```
  docker run --name mongo-db1 -d mongo
  ```
- ## Access mongo shell
+ ###Access mongo shell
  ```
  docker exec -it mongo-db1 mongo admin
  ```
